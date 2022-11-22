@@ -1,0 +1,24 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'photo/style.css' %}"/>
+    <div>
+      <ul>
+        <li class="hbar1"><a href="{% url "home" %}"> Home </a></li>
+        <li class="hbar1"><a href="{% url "upload" %}"> Upload </a></li>
+        <li class="hbar1"><a href="{% url "gallery" %}"> Gallery </a></li>
+        <li class="hbar1"><a href="{% url "update" %}"> Update </a></li>
+        <li class="hbar1"><a href="{% url "about" %}"> About </a></li>
+      </ul>
+    </div>
+    <h1>Welcome {{ request.user|title }} </h1>
+    <title>PhotoAlbum</title>
+    <div>
+      <h2> "Memory is a way of holding on to the things you love, </h2>
+      <h2>  the things you are, </h2>
+      <h2>  the things you never want to lose."</h2>
+    </div>
+  </head>
+ 
+</html>

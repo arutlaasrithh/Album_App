@@ -1,0 +1,22 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'photo/style.css' %}"/>
+    <div>
+      <ul>
+      <li class="hbar1"><a href="{% url "home" %}"> Home </a></li>
+      <li class="hbar1"><a href="{% url "upload" %}"> Upload </a></li>
+      <li class="hbar1"><a href="{% url "gallery" %}"> Gallery </a></li>
+      <li class="hbar1"><a href="{% url "update" %}"> Update </a></li>
+      </ul>
+    </div>
+    <h1>Welcome {{ request.user|title }} </h1> 
+    <h1>PhotoAlbum</h1>   
+  </head>
+  <body>
+    <p>this is a photo album website designed by group38</p>
+    
+  </body>
+ 
+</html>
