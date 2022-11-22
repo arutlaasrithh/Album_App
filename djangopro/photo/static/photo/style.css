@@ -1,0 +1,23 @@
+body {
+    background: url("images/img-1.jpg");
+    background-color: antiquewhite;
+    font-size: 18px;
+    position: relative;
+    color: #c2b1b1;
+    
+}
+
+a, p {
+  color: #d5d9de;
+}
+h2{
+    color: #d5d9de;
+    font-style: italic;
+    font-size: larger;
+    position: relative;
+}
+.hbar1 {
+ display: inline;
+ margin: 15px;
+ font-style: italic;
+}
